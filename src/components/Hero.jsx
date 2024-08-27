@@ -19,7 +19,7 @@ const Hero = () => {
             />
           </div>
           <div className="text-center p-5">
-            <p className="font-semibold md:text-xl text-black-400 dark:text-black-200">Hello, I'm</p>
+            <p className="font-semibold md:text-xl text-black-400 dark:text-black-200">Hello, I&apos;m</p>
             <p className="text-3xl sm:text-4xl md:text-5xl xl:text-6xl mt-4 font-extrabold text-black-600 dark:text-white">Arsal Iftikhar</p>
             <p className="text-2xl sm:text-2xl md:text-3xl xl:text-4xl mt-3 font-bold text-black-400 dark:text-black-200">Full-stack Developer</p>
             <div className="mt-5 flex justify-center items-center gap-4">
