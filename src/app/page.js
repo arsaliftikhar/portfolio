@@ -41,10 +41,10 @@ export default function Home() {
                 I&apos;m a passionate and experienced full-stack developer with a strong foundation in both front-end and back-end technologies. I specialize in building robust and scalable web applications that solve real-world problems and provide seamless user experiences. My expertise spans across various technologies, including HTML, CSS, JavaScript, React, Next.js, Node.js, Express.js, PHP, Laravel, and MySQL, among others.
               </p>
               <p className="mt-3">
-                If you're looking for a developer who is not just technically proficient but also dedicated to building meaningful and impactful software, I'm your go-to person.
+                If you&apos;re looking for a developer who is not just technically proficient but also dedicated to building meaningful and impactful software, I&apos;m your go-to person.
               </p>
               <p className="mt-3 font-semibold">
-                Let's connect and create something amazing together!
+                Let&apos;s connect and create something amazing together!
               </p>
 
             </div>
