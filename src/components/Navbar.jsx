@@ -37,7 +37,7 @@ const Navbar = () => {
   }
 
   return (
-    <div>
+    <div className="">
       <div className="hidden md:block md:flex md:items-center md:justify-between mt-10">
         <Image
           src={logoImage}
@@ -48,25 +48,25 @@ const Navbar = () => {
         />
         <div className="flex items-center gap-8">
           <Link
-            href={"/"}
+            href={"#about"}
             className="text-2xl text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             About
           </Link>
           <Link
-            href={"/"}
+            href={"#experience"}
             className="text-2xl text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Experience
           </Link>
           <Link
-            href={"/"}
+            href={"#projects"}
             className="text-2xl text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Projects
           </Link>
           <Link
-            href={"/"}
+            href={"#contact"}
             className="text-2xl text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Contact
@@ -89,27 +89,27 @@ const Navbar = () => {
       </div>
 
       <div className={`flex justify-end ${mobileMenu?'hidden':''}`}>
-        <div className="flex flex-col gap-2 w-40 bg-black-50 dark:bg-black-600 text-right p-3 px-5 rounded text-lg absolute z-10">
+        <div className="flex flex-col gap-2 w-40 border border-black-600 dark:border-black-300 bg-black-50 dark:bg-black-600 text-right p-3 px-5 rounded text-lg absolute z-10">
           <Link
-            href={"/"}
+            href={"#about"}
             className=" text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             About
           </Link>
           <Link
-            href={"/"}
+            href={"#experience"}
             className=" text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Experience
           </Link>
           <Link
-            href={"/"}
+            href={"#projects"}
             className=" text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Projects
           </Link>
           <Link
-            href={"/"}
+            href={"#contact"}
             className=" text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Contact
