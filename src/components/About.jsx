@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { FaMedal } from "react-icons/fa";
 import { FaUserGraduate } from "react-icons/fa";
-import { RiArrowDownDoubleLine } from "react-icons/ri";
 
 const About = () => {
   return (
@@ -42,9 +41,6 @@ const About = () => {
                 Let&apos;s connect and create something amazing together!
               </p>
             </div>
-            <div className="flex justify-end">
-                <RiArrowDownDoubleLine className="text-5xl cursor-pointer mt-10"/>
-              </div>
           </div>
         </div>
       </div>
