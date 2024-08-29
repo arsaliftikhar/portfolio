@@ -187,25 +187,27 @@ const MenuSlider = () => {
               `
                 <b>Project Technology:</b>
                 <ul type="circle" style="margin:10px;list-style:circle;">
-                  <li>Front-end NextJS</li>
-                  <li>Back-end API NextJS</li>
-                  <li>TronWeb API Integration</li>
-                  <li>Database MongoDB</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>JQuery</li>
+                  <li>Bootstrap</li>
+                  <li>Laravel</li>
+                  <li>MySql</li>
                 </ul>
                 <br>
                 <b>Key Functions:</b>
                 <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>E-commerce</li>
                   <li>Light and dark mode website</li>
                   <li>Responsive layout for all screen devices</li>
                   <li>SignIn | SignUp | Reset password</li>
                   <li>Email integration for notifications</li>
-                  <li>Secure personal tron crypto wallet address of blockchain</li>
-                  <li>Transfer funds to another wallet</li>
+                  <li>Secure personal tron crypto wallet address of blockchain for deposit</li>
                   <li>OTP code security</li>
-                  <li>Real time transactions history on blockchain</li>
+                  <li>Real time transactions history</li>
                   <li>Referral Program</li>
                   <li>MLM integration</li>
-                  <li>Subscription Membership</li>
                   <li>Real time commission transfer to upline 3 levels</li>
                   <li>Network structure tree (Genealogy)</li>
                 </ul>
@@ -224,6 +226,46 @@ const MenuSlider = () => {
               `
             )}
             demoLink="https://treviya.com"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <Slide
+            title="Chillichicks Restaurant"
+            imageSrc="/projects-image/4.png"
+            onProjectDetails={() => handleOpenModal(
+              'Chillichicks Restaurant', 
+              `
+                <b>Project Technology:</b>
+                <ul type="circle" style="margin:10px;list-style:circle;">
+                  <li>Tailwind CSS</li>
+                  <li>NextJS</li>
+                  <li>MongoDB</li>
+                </ul>
+                <br>
+                <b>Key Functions:</b>
+                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>E-commerce</li>
+                  <li>Light and dark mode website</li>
+                  <li>Responsive layout for all screen devices</li>
+                  <li>SignIn | SignUp | Reset password</li>
+                  <li>Email integration for notifications</li>
+                  <li>User and admin dashboard</li>
+                </ul>
+                <br>
+                <b>Project Description:</b>
+                <p style="margin-top:10px">
+                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
+                </p>
+                <br>
+                <b>Login Details:</b>
+                <p style="margin-top:10px">
+                  <b>Link: </b> <a href="https://chillichicks.vercel.app" target="_blank">https://chillichicks.vercel.app</a> <br>
+                  <b>Username: </b>demo123 <br>
+                  <b>Password: </b>Demo@123
+                </p>
+              `
+            )}
+            demoLink="https://chillichicks.vercel.app"
           />
         </SwiperSlide>
         
