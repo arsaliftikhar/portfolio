@@ -126,24 +126,104 @@ const MenuSlider = () => {
                 </p>
               `
             )}
-            demoLink="https://cryptkeeperwallet.vercel.app/"
+            demoLink="https://cryptkeeperwallet.vercel.app"
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <Slide
-            title="Combo Chapli Kabab Burger"
-            imageSrc="/projects-image/1.png"
-            onProjectDetails={() => handleOpenModal('Combo Chapli Kabab Burger', 'This is the description of Combo Chapli Kabab Burger.')}
-            demoLink="https://google.com"
+            title="Cryptex Zone"
+            imageSrc="/projects-image/2.png"
+            onProjectDetails={() => handleOpenModal(
+              'Cryptex Zone', 
+              `
+                <b>Project Technology:</b>
+                <ul type="circle" style="margin:10px;list-style:circle;">
+                  <li>Front-end NextJS</li>
+                  <li>Back-end API NextJS</li>
+                  <li>TronWeb API Integration</li>
+                  <li>Database MongoDB</li>
+                </ul>
+                <br>
+                <b>Key Functions:</b>
+                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>Light and dark mode website</li>
+                  <li>Responsive layout for all screen devices</li>
+                  <li>SignIn | SignUp | Reset password</li>
+                  <li>Email integration for notifications</li>
+                  <li>Secure personal tron crypto wallet address of blockchain</li>
+                  <li>Transfer funds to another wallet</li>
+                  <li>OTP code security</li>
+                  <li>Real time transactions history on blockchain</li>
+                  <li>Referral Program</li>
+                  <li>MLM integration</li>
+                  <li>Subscription Membership</li>
+                  <li>Real time commission transfer to upline 3 levels</li>
+                  <li>Network structure tree (Genealogy)</li>
+                </ul>
+                <br>
+                <b>Project Description:</b>
+                <p style="margin-top:10px">
+                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
+                </p>
+                <br>
+                <b>Login Details:</b>
+                <p style="margin-top:10px">
+                  <b>Link: </b> <a href="https://cryptexzone.vercel.app" target="_blank">https://cryptexzone.vercel.app</a> <br>
+                  <b>Username: </b>demo123 <br>
+                  <b>Password: </b>Demo@123
+                </p>
+              `
+            )}
+            demoLink="https://cryptexzone.vercel.app"
           
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <Slide
-            title="Combo Chapli Kabab Burger"
-            imageSrc="/projects-image/1.png"
-            onProjectDetails={() => handleOpenModal('Combo Chapli Kabab Burger', 'This is the description of Combo Chapli Kabab Burger.')}
-            demoLink="https://google.com"
+            title="Treviya"
+            imageSrc="/projects-image/3.png"
+            onProjectDetails={() => handleOpenModal(
+              'Treviya', 
+              `
+                <b>Project Technology:</b>
+                <ul type="circle" style="margin:10px;list-style:circle;">
+                  <li>Front-end NextJS</li>
+                  <li>Back-end API NextJS</li>
+                  <li>TronWeb API Integration</li>
+                  <li>Database MongoDB</li>
+                </ul>
+                <br>
+                <b>Key Functions:</b>
+                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>Light and dark mode website</li>
+                  <li>Responsive layout for all screen devices</li>
+                  <li>SignIn | SignUp | Reset password</li>
+                  <li>Email integration for notifications</li>
+                  <li>Secure personal tron crypto wallet address of blockchain</li>
+                  <li>Transfer funds to another wallet</li>
+                  <li>OTP code security</li>
+                  <li>Real time transactions history on blockchain</li>
+                  <li>Referral Program</li>
+                  <li>MLM integration</li>
+                  <li>Subscription Membership</li>
+                  <li>Real time commission transfer to upline 3 levels</li>
+                  <li>Network structure tree (Genealogy)</li>
+                </ul>
+                <br>
+                <b>Project Description:</b>
+                <p style="margin-top:10px">
+                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
+                </p>
+                <br>
+                <b>Login Details:</b>
+                <p style="margin-top:10px">
+                  <b>Link: </b> <a href="https://treviya.com" target="_blank">https://treviya.com</a> <br>
+                  <b>Username: </b>demo123 <br>
+                  <b>Password: </b>Demo@123
+                </p>
+              `
+            )}
+            demoLink="https://treviya.com"
           />
         </SwiperSlide>
         
