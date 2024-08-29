@@ -4,6 +4,7 @@ import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
+import Reviews from "@/components/Reviews";
 
 
 
@@ -17,6 +18,7 @@ export default function Home() {
       <About />
       <Experience />
       <Projects/>
+      <Reviews/>
       <Contact/>
 
     </div>

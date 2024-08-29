@@ -22,7 +22,7 @@ const Contact = () => {
       </div>
       <div className="text-center mt-10 dark:text-black-200">
         <p>
-         Copyright © 2023 John Doe. All Rights Reserved.
+         Copyright © {new Date().getFullYear()}. All Rights Reserved.
          </p>
       </div>
     </div>

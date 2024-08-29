@@ -66,6 +66,12 @@ const Navbar = () => {
             Projects
           </Link>
           <Link
+            href={"#reviews"}
+            className="text-2xl text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
+          >
+            Reviews
+          </Link>
+          <Link
             href={"#contact"}
             className="text-2xl text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
@@ -107,6 +113,12 @@ const Navbar = () => {
             className=" text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
           >
             Projects
+          </Link>
+          <Link
+            href={"#reviews"}
+            className=" text-black-700 dark:text-white pb-3 transition-all duration-300 border-transparent border-b-2 hover:border-black-300 hover:text-black-300 hover:dark:text-black-300"
+          >
+            Reviews
           </Link>
           <Link
             href={"#contact"}
