@@ -61,7 +61,7 @@ const MenuSlider = () => {
         effect="coverflow"
         grabCursor={false}
         centeredSlides={true}
-        initialSlide={1}
+        initialSlide={2}
         breakpoints={{
           0: {
             slidesPerView: 1, // Show 1 slide on screens <= 640px
@@ -81,6 +81,56 @@ const MenuSlider = () => {
         modules={[EffectCoverflow, Pagination]}
         className="swiper"
       >
+        <SwiperSlide className="swiper-slide">
+          <Slide
+            title="Treviya"
+            imageSrc="/projects-image/3.png"
+            onProjectDetails={() => handleOpenModal(
+              'Treviya', 
+              `
+                <b>Project Technology:</b>
+                <ul type="circle" style="margin:10px;list-style:circle;">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>JQuery</li>
+                  <li>Bootstrap</li>
+                  <li>Laravel</li>
+                  <li>MySql</li>
+                </ul>
+                <br>
+                <b>Key Functions:</b>
+                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>E-commerce</li>
+                  <li>Light and dark mode website</li>
+                  <li>Responsive layout for all screen devices</li>
+                  <li>SignIn | SignUp | Reset password</li>
+                  <li>Email integration for notifications</li>
+                  <li>Secure personal tron crypto wallet address of blockchain for deposit</li>
+                  <li>OTP code security</li>
+                  <li>Real time transactions history</li>
+                  <li>Referral Program</li>
+                  <li>MLM integration</li>
+                  <li>Real time commission transfer to upline 3 levels</li>
+                  <li>Network structure tree (Genealogy)</li>
+                </ul>
+                <br>
+                <b>Project Description:</b>
+                <p style="margin-top:10px">
+                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
+                </p>
+                <br>
+                <b>Login Details:</b>
+                <p style="margin-top:10px">
+                  <b>Link: </b> <a href="https://treviya.com" target="_blank">https://treviya.com</a> <br>
+                  <b>Username: </b>demo123 <br>
+                  <b>Password: </b>Demo@123
+                </p>
+              `
+            )}
+            demoLink="https://treviya.com"
+          />
+        </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <Slide
             title="Cryptkeeper"
@@ -180,56 +230,6 @@ const MenuSlider = () => {
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <Slide
-            title="Treviya"
-            imageSrc="/projects-image/3.png"
-            onProjectDetails={() => handleOpenModal(
-              'Treviya', 
-              `
-                <b>Project Technology:</b>
-                <ul type="circle" style="margin:10px;list-style:circle;">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>JavaScript</li>
-                  <li>JQuery</li>
-                  <li>Bootstrap</li>
-                  <li>Laravel</li>
-                  <li>MySql</li>
-                </ul>
-                <br>
-                <b>Key Functions:</b>
-                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
-                  <li>E-commerce</li>
-                  <li>Light and dark mode website</li>
-                  <li>Responsive layout for all screen devices</li>
-                  <li>SignIn | SignUp | Reset password</li>
-                  <li>Email integration for notifications</li>
-                  <li>Secure personal tron crypto wallet address of blockchain for deposit</li>
-                  <li>OTP code security</li>
-                  <li>Real time transactions history</li>
-                  <li>Referral Program</li>
-                  <li>MLM integration</li>
-                  <li>Real time commission transfer to upline 3 levels</li>
-                  <li>Network structure tree (Genealogy)</li>
-                </ul>
-                <br>
-                <b>Project Description:</b>
-                <p style="margin-top:10px">
-                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
-                </p>
-                <br>
-                <b>Login Details:</b>
-                <p style="margin-top:10px">
-                  <b>Link: </b> <a href="https://treviya.com" target="_blank">https://treviya.com</a> <br>
-                  <b>Username: </b>demo123 <br>
-                  <b>Password: </b>Demo@123
-                </p>
-              `
-            )}
-            demoLink="https://treviya.com"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <Slide
             title="Chillichicks Restaurant"
             imageSrc="/projects-image/4.png"
             onProjectDetails={() => handleOpenModal(
@@ -266,6 +266,51 @@ const MenuSlider = () => {
               `
             )}
             demoLink="https://chillichicks.vercel.app"
+          />
+        </SwiperSlide>
+        <SwiperSlide className="swiper-slide">
+          <Slide
+            title="Jobpayeer"
+            imageSrc="/projects-image/5.png"
+            onProjectDetails={() => handleOpenModal(
+              'Jobpayeer', 
+              `
+                <b>Project Technology:</b>
+                <ul type="circle" style="margin:10px;list-style:circle;">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>JQuery</li>
+                  <li>AJAX</li>
+                  <li>Bootstrap</li>
+                  <li>Laravel</li>
+                  <li>MySql</li>
+                </ul>
+                <br>
+                <b>Key Functions:</b>
+                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>Freelancing Platform</li>
+                  <li>Micro jobs posting</li>
+                  <li>Responsive layout for all screen devices</li>
+                  <li>SignIn | SignUp | Reset password</li>
+                  <li>Email integration for notifications</li>
+                  <li>User and admin dashboard</li>
+                </ul>
+                <br>
+                <b>Project Description:</b>
+                <p style="margin-top:10px">
+                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
+                </p>
+                <br>
+                <b>Login Details:</b>
+                <p style="margin-top:10px">
+                  <b>Link: </b> <a href="https://jobpayeer.com/login" target="_blank">https://jobpayeer.com/login</a> <br>
+                  <b>Username: </b>demo <br>
+                  <b>Password: </b>Demo@123
+                </p>
+              `
+            )}
+            demoLink="https://jobpayeer.com/login"
           />
         </SwiperSlide>
         
