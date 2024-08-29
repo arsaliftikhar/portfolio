@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, EffectCoverflow } from "swiper/modules";
 // Import Swiper styles
@@ -8,27 +8,47 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import Image from "next/image";
 import Button from "@/components/Button";
+import ModalCard from "./ModalCard";
 
-const Slide = ({ title, imageSrc }) => (
-  <div className=" border-2 bg-black-50 dark:bg-black-600 border-black-300 rounded-3xl w-full text-center p-8 text-sm sm:text-lg">
+const Slide = ({ title, imageSrc , onProjectDetails, demoLink}) => (
+  <div className="h-96 border-2 bg-black-50 dark:bg-black-600 border-black-300 rounded-3xl w-full text-center p-8 text-sm sm:text-lg">
    <div className="flex justify-center">
    <Image
       src={imageSrc}
       alt={title}
-      height={200}
-      width={200}
-      className="w-auto rounded-3xl"
+      height={400}
+      width={400}
+      className="w-60 h-36 rounded-xl"
     />
    </div>
-    <p className="mt-3 text-xl font-semibold text-black-600 dark:text-white">Project 1</p>
+    <p className="mt-3 text-xl font-semibold text-black-600 dark:text-white">{title}</p>
     <div className="flex items-center justify-center gap-5 mt-4">
-      <Button type="outline" value="Github" className="w-28" />
-      <Button type="outline" value="Live Demo" className="w-28" />
+      <Button type="outline" value="Details" className="w-28" onClick={onProjectDetails}/>
+      <a href={demoLink} target="_blank">
+        <Button type="outline" value="Demo" className="w-28" />
+      </a>
     </div>
   </div>
 );
 
 const MenuSlider = () => {
+
+  const [openModal, setOpenModal] = useState(false);
+  const [modalContent, setModalContent] = useState({
+    modalTitle: '',
+    modalDescription: '',
+  });
+
+  const handleOpenModal = (title, description) => {
+    setModalContent({ modalTitle: title, modalDescription: description });
+    setOpenModal(true);
+};
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+  };
+
+
   return (
     <div className="pt-10 pb-28" id="projects">
       <div className="text-center mb-10">
@@ -41,7 +61,7 @@ const MenuSlider = () => {
         effect="coverflow"
         grabCursor={false}
         centeredSlides={true}
-        initialSlide={3}
+        initialSlide={1}
         breakpoints={{
           0: {
             slidesPerView: 1, // Show 1 slide on screens <= 640px
@@ -63,41 +83,79 @@ const MenuSlider = () => {
       >
         <SwiperSlide className="swiper-slide">
           <Slide
-            title="Combo Chapli Kabab Burger"
+            title="Cryptkeeper"
             imageSrc="/projects-image/1.png"
+            onProjectDetails={() => handleOpenModal(
+              'Cryptkeeper', 
+              `
+                <b>Project Technology:</b>
+                <ul type="circle" style="margin:10px;list-style:circle;">
+                  <li>Front-end NextJS</li>
+                  <li>Back-end API NextJS</li>
+                  <li>TronWeb API Integration</li>
+                  <li>Database MongoDB</li>
+                </ul>
+                <br>
+                <b>Key Functions:</b>
+                <ul type="circle" style="margin-top:10px;list-style:circle;margin-left:10px">
+                  <li>Light and dark mode website</li>
+                  <li>Responsive layout for all screen devices</li>
+                  <li>SignIn | SignUp | Reset password</li>
+                  <li>Email integration for notifications</li>
+                  <li>Secure personal tron crypto wallet address of blockchain</li>
+                  <li>Transfer funds to another wallet</li>
+                  <li>OTP code security</li>
+                  <li>Real time transactions history on blockchain</li>
+                  <li>Referral Program</li>
+                  <li>MLM integration</li>
+                  <li>Subscription Membership</li>
+                  <li>Real time commission transfer to upline 3 levels</li>
+                  <li>Network structure tree (Genealogy)</li>
+                </ul>
+                <br>
+                <b>Project Description:</b>
+                <p style="margin-top:10px">
+                  Cryptkeeper is a crypto wallet offering a great referral joining program with a monthly subscription fee of 30 USDT. If you join the program and refer someone who joins using your referral code, you will instantly receive a 10 USDT referral gift bonus in your wallet. If your direct referral then refers someone else using their own referral code, they will receive 10 USDT, and you will get 3 USDT from that level 2 referral. Similarly, if your level 2 team member refers someone to join the program, you will receive 2 USDT from that level 3 referral, instantly credited to your wallet.
+                </p>
+                <br>
+                <b>Login Details:</b>
+                <p style="margin-top:10px">
+                  <b>Link: </b> <a href="https://cryptkeeperwallet.vercel.app/login" target="_blank">https://cryptkeeperwallet.vercel.app/login</a> <br>
+                  <b>Username: </b>demo123 <br>
+                  <b>Password: </b>Demo@123
+                </p>
+              `
+            )}
+            demoLink="https://cryptkeeperwallet.vercel.app/"
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <Slide
             title="Combo Chapli Kabab Burger"
             imageSrc="/projects-image/1.png"
+            onProjectDetails={() => handleOpenModal('Combo Chapli Kabab Burger', 'This is the description of Combo Chapli Kabab Burger.')}
+            demoLink="https://google.com"
+          
           />
         </SwiperSlide>
         <SwiperSlide className="swiper-slide">
           <Slide
             title="Combo Chapli Kabab Burger"
             imageSrc="/projects-image/1.png"
+            onProjectDetails={() => handleOpenModal('Combo Chapli Kabab Burger', 'This is the description of Combo Chapli Kabab Burger.')}
+            demoLink="https://google.com"
           />
         </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <Slide
-            title="Combo Chapli Kabab Burger"
-            imageSrc="/projects-image/1.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <Slide
-            title="Combo Chapli Kabab Burger"
-            imageSrc="/projects-image/1.png"
-          />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide">
-          <Slide
-            title="Combo Chapli Kabab Burger"
-            imageSrc="/projects-image/1.png"
-          />
-        </SwiperSlide>
+        
       </Swiper>
+
+      <ModalCard
+        openModal={openModal}
+        modalTitle={modalContent.modalTitle}
+        modalDescription={modalContent.modalDescription}
+        onClose={handleCloseModal}
+      />
+
     </div>
   );
 };

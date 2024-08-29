@@ -17,10 +17,10 @@ const Slide = ({ title, imageSrc }) => (
         height="200"
         src={`${imageSrc}&modestbranding=1&rel=0`}
         title={title}
-        frameborder="0"
+        frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
       ></iframe>
     </div>
     <p className="mt-3 text-xl font-semibold text-black-600 dark:text-white">
